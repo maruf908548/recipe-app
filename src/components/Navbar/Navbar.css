@@ -1,0 +1,18 @@
+/* Navbar.css */
+.navbar-container {
+  background-color: #1f2937; /* Dark Gray Background */
+}
+
+.menu-items a {
+  color: #374151;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.menu-items a:hover {
+  color: #fbbf24; /* Hover effect for menu items */
+}
+
+.search-bar:hover .search-input {
+  background-color: #374151; /* Darker gray on hover */
+}
