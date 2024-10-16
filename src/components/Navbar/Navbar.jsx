@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import "./Navbar.css";
 import { CiSearch } from "react-icons/ci";
 import { FaRegUserCircle } from "react-icons/fa";
@@ -8,7 +7,7 @@ const Navbar = () => {
       <nav className="flex justify-between items-center p-4 m-4 ">
         {/* Logo/Website Name */}
         <div className="logo text-2xl font-bold text-darkblue">
-          <a href="/">Receipe Calorie</a>
+          <a href="/">Recipe Calorie</a>
         </div>
 
         {/* Menu Items */}
@@ -43,7 +42,7 @@ const Navbar = () => {
           {/* User Icon */}
           <div className="user-icon text-2xl ">
             <button>
-              <FaRegUserCircle className="text-gray-800"></FaRegUserCircle>
+              <FaRegUserCircle className="text-darkblue"></FaRegUserCircle>
             </button>
           </div>
         </div>
@@ -51,7 +50,5 @@ const Navbar = () => {
     </div>
   );
 };
-
-Navbar.propTypes = {};
 
 export default Navbar;
