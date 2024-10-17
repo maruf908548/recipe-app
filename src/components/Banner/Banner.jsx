@@ -2,12 +2,18 @@ import "./Banner.css"; // Importing custom CSS for any extra styles
 
 const Banner = () => {
   return (
-    <div className="banner-container bg-cover bg-center rounded-2xl h-[80vh] flex flex-col justify-center items-center text-white  ml-4 mr-4">
+    <div className="relative h-[70vh] flex flex-col  justify-center items-center text-white ml-4 mr-4">
+      <img
+        src="/src/assets/recipe_making.png"
+        alt="Cooking Class"
+        className="absolute inset-0 w-full h-full rounded-2xl  object-cover   z-0"
+      />
+
       {/* Overlay to make text visible over the image */}
-      <div className="overlay bg-black bg-opacity-50 rounded-2xl absolute inset-0 z-0"></div>
+      <div className="absolute inset-0 rounded-2xl bg-black bg-opacity-50 z-5"></div>
 
       {/* Banner content */}
-      <div className="content z-10 text-center max-w-3xl">
+      <div className="relative text-center max-w-3xl">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Discover an exceptional cooking class tailored for you!
         </h1>
@@ -21,13 +27,13 @@ const Banner = () => {
         <div className="buttons flex justify-center space-x-6">
           <a
             href="/explore"
-            className="btn btn-primary px-6 py-3 rounded-full bg-green-500 hover:bg-green-700 text-white"
+            className="px-6 py-3 rounded-full bg-green-500 hover:bg-green-700 text-white"
           >
             Explore Now
           </a>
           <a
             href="/feedback"
-            className="btn btn-secondary px-6 py-3 rounded-full bg-transparent border-2 border-white hover:bg-white hover:text-gray-800 text-white"
+            className="px-6 py-3 rounded-full border-2 border-white hover:bg-white hover:text-gray-800 text-white"
           >
             Our Feedback
           </a>
